@@ -62,8 +62,45 @@ o After finishing, click File > Exit to close Eclipse IDE.
 
 
 ## PROGRAM:
+package matrix;
+
+public class mathrix {
+    public static void main(String[] args) {
+
+        int[][] matrix1 = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        int[][] matrix2 = {
+            {9, 8, 7},
+            {6, 5, 4},
+            {3, 2, 1}
+        };
+
+        int[][] result = new int[3][3];
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                result[i][j] = matrix1[i][j] + matrix2[i][j];
+            }
+        }
+
+        System.out.println("Resultant Matrix:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(result[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
 
 ## OUTPUT:
+<img width="1448" height="167" alt="image" src="https://github.com/user-attachments/assets/28df0967-bce5-4b31-b7e7-7ced1817bd7c" />
+
 
 ## RESULT:
 
